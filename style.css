@@ -2,21 +2,98 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header{
     text-align: center;
     line-height: 2em;
-    
+    background-color:#dfb53f;
+}
+
+h1{
+    padding-bottom: 5%;
+    font-size: 300%;
+    color: #dfb53f;
+}
+
+.hero-inner{
+    color: #fff;
+    padding: 2%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    line-height: 2.5em;
+    border-radius: 2%;
 }
 
 .hero{
-    background-image: url(https://via.placeholder.com/150); 
+    /* height and width dimensions */
+    height: 100vh;
+    width:100vw;
+    /* flex properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background image properties */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(https://images4.alphacoders.com/110/1107582.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
 .button{
     padding: 2%;
-    background-color: black;
+    background-color: #0e0c8a;
+    border:2px solid #0e0c8a;
     color: white;
+}
+
+main{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./images/body-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chars-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chars-card{
+    list-style: none;
+    border: 5px solid black;
+    margin: 15% 5%;
+    padding: 15% 10%;
+}
+
+/* Background images for each character option */
+#childe{
+    background-image: url(./images/Tartaglia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#alatus{
+    background-image: url(./images/Xiao.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#leaf{
+    background-image: url(./images/Kazuha.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer{
+    text-align: center;
+    font-size: 125%;
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
 }
