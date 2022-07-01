@@ -230,24 +230,17 @@ function showScores(){
     saveButton.addEventListener("click", function(event){
         event.preventDefault();
 
-        var userScore ={
-            username: initialsEl.value,
-            points: score,
-        }
 
-        localStorage.setItem("userScore", JSON.stringify(userScore));
-        renderHighScoreList();
-    });
-
-    function renderHighScoreList(){
-        var users = [];
-        var highScoreList = JSON.parse(localStorage.getItem("userScore"));
-        
+        localStorage.setItem("userScore", score);
+        localStorage.setItem("initials", initialsEl.value);
         
         var li = document.createElement("li");
-        li.textContent = highScoreList.value;
+        
+        var txt = localStorage.getItem(initialsEl.value) + localStorage.getItem(score);
+        li.textContent = txt;
         console.log(li);
-    }
+    
+    });
     
     //I need to retrieve initials and scores for a scoreboard
 

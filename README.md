@@ -12,6 +12,19 @@ You may run on Visual Studio Code or any other platform.
 
 ## Images
 
+Loading page:
+![./images/website-images/Loading-page.png]
+
+Selection page:
+![./images/website-images/quiz-choices.png]
+
+Quiz preview:
+![./images/website-images/quiz-game.png]
+
+Score page:
+
+![./images/website-images/score-page.png]
+
 ## Sources
 
 Followed guide to create a full-page Hero image:
