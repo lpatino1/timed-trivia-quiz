@@ -13,17 +13,17 @@ You may run on Visual Studio Code or any other platform.
 ## Images
 
 Loading page:
-![./images/website-images/Loading-page.png]
+![Image of Website](./images/website-images/Loading-page.png)
 
 Selection page:
-![./images/website-images/quiz-choices.png]
+![Image of Website](./images/website-images/quiz-choices.png)
 
 Quiz preview:
-![./images/website-images/quiz-game.png]
+![Image of Website](./images/website-images/quiz-game.png)
 
 Score page:
 
-![./images/website-images/score-page.png]
+![Image of Website](./images/website-images/score-page.png)
 
 ## Sources
 
