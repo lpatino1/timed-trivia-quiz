@@ -50,6 +50,12 @@ h1{
     color: white;
 }
 
+.button:hover{
+    background-color: white;
+    color: #0e0c8a;
+    border: 2px solid;
+}
+
 main{
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./images/body-background.png);
     background-size: cover;
@@ -60,37 +66,122 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-image:();
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .chars-card{
     list-style: none;
-    border: 5px solid black;
+    border: 5px solid white;
     margin: 15% 5%;
     padding: 15% 10%;
 }
 
+.chars-card:hover{
+    border: 5px blue solid;
+    box-shadow: darkblue 5px 5px;
+}
+
+
 /* Background images for each character option */
 #childe{
-    background-image: url(./images/Tartaglia.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(./images/Tartaglia.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#childe:hover{
+    background-image:url(./images/Tartaglia.jpg);
 }
 
 #alatus{
-    background-image: url(./images/Xiao.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(./images/Xiao.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#alatus:hover{
+    background-image:url(./images/Xiao.jpg);
 }
 
 #leaf{
-    background-image: url(./images/Kazuha.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/Kazuha.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+#leaf:hover{
+    background-image:url(./images/Kazuha.jpg);
+}
+
+#quiz-board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#question{
+    background-color: lightblue;
+    display: inline-block;
+    border: #0e0c8a solid 2px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 250%;
+    padding: 5%;
+    display: none;
+}
+
+.answerBtn{
+    list-style: none;
+    display: inline-block;
+    background-color: lightblue;
+    border: #0e0c8a solild 2px;
+    text-align: left;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 2%;
+    display: none;
+}
+
+.answerBtn:hover{
+    border: black 5px solid;
+}
+
+.timer{
+    background-color: #0e0c8a;
+    color: white;
+    padding: 2%;
+    display: none;
+}
+
+#high-scores{
+    display: flex;
+    justify-content:center;
+    align-items: center
+}
+
+#scores-list{
+    margin-top: 10%;
+    align-items: center;
+    padding: 5%;
+    justify-content:end;
+    display: inline-block;
+    background-color: white;
+    color: black;
+}
+
+form{
+    display: inline-block;
+    background-color: lightskyblue;
+    opacity: 95%;
+    padding: 5%;
+    background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)) ;
+}
 footer{
     text-align: center;
     font-size: 125%;

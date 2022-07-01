@@ -14,26 +14,52 @@
         <h1>Genshin Impact Fan Quiz</h1>
         <h2>Choose one of the three characters to begin their quiz.</h2>
         <h2>Click on the button below to start.</h2>
-        <a href="#"><button class ="button">Click here</button></a>
+        <a href="#start-page"><button class ="button">Start</button></a>
     </div>
     </section>
+    <!-- main section -->
     <main>
         <!-- 3 choices -->
-        <section>
-            <div>
-                <ul class ="chars-container">
-                    <li class = "chars-card" id ="childe"></li>
-                    <li class = "chars-card" id ="alatus"></li>
-                    <li class = "chars-card" id="leaf"></li>
-                </ul>
+        <section id="start-page">
+            <div class ="chars-container">
+                
+                    <div class = "chars-card" id ="childe"></div>
+                    <div class = "chars-card" id ="alatus"></div>
+                    <div class = "chars-card" id="leaf"></div>
             </div>
         </section>
+        <section id ="quiz-board">
+            <!-- quiz board -->
+            <div class ="timer"></div>
+            <div id="question"></div>
+            <button class = "answerBtn" id="choice1">ee</button>
+            <button class = "answerBtn" id="choice2">eee</button>
+            <button class = "answerBtn" id="choice3">eee</button>
+        </section>
+        <section id = "high-scores">
+            <!-- High Scores -->
+            <div id="scores-container">
+                <div>
+                    <form action="submit">
+                    <label for="score" id="total">Score:</label><br><br>
+                    <label for="Initials">Initials:</label>
+                    <input type = "text" id="initials"></br><br><br>
+                    <input type="submit" value = "Submit" id="save">
+                    </form>
+                 </div>
+                 <div id="scores-list">
+                    <h2>Congratulations!</h2>
+                    <h3>Thank you for playing!</h3>
+                 </div>
+            </div>
+            
+        </section>
+        <!-- footer -->
         <footer>
             <p>Made with &#9825</p>
             <p>Not affiliated with Hoyoverse</p>
         </footer>
     </main>
-    
  <script src="./script.js"></script>
 </body>
 </html>
