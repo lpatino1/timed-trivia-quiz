@@ -152,9 +152,9 @@ function genQuestions(){
         showScores();
     } else{
         while(choice1==="false"){
-            answer1El.style.backgroundColor="";
-            answer2El.style.backgroundColor="";
-            answer3El.style.backgroundColor="";
+            // answer1El.style.backgroundColor="";
+            // answer2El.style.backgroundColor="";
+            // answer3El.style.backgroundColor="";
             questionEl.innerHTML = cQuestions[i].questions;
             answer1El.innerHTML = cQuestions[i].options[0];
             answer2El.innerHTML = cQuestions[i].options[1];
@@ -170,7 +170,7 @@ function checkAnswer(event){
     let userAnswer = clickedButton.textContent;
     if(userAnswer === cQuestions[i].correct){
         score +=1;
-        clickedButton.style.backgroundColor ="green";
+        // clickedButton.style.backgroundColor ="green";
         i +=1;
         choice1 = "false";
         genQuestions();
@@ -178,7 +178,7 @@ function checkAnswer(event){
     } else if(userAnswer != cQuestions[i].correct){
         //I need to take away time when an incorrect answer is selected
         timeLeft -= 20;
-        clickedButton.style.backgroundColor = "red";
+        // clickedButton.style.backgroundColor = "red";
         i+=1;
         choice1 = "false";
         genQuestions();
