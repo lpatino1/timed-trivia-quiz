@@ -31,3 +31,6 @@ Followed guide to create a full-page Hero image:
 https://codetheweb.blog/fullscreen-image-hero/
 
 ## Link to deployed webpage
+
+https://lpatino1.github.io/timed-trivia-quiz/
+
